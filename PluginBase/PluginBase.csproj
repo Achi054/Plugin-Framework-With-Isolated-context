@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Sujith</Authors>
+    <Description>Base plugin contract</Description>
+    <Version>2.2.0</Version>
+  </PropertyGroup>
+
+</Project>
