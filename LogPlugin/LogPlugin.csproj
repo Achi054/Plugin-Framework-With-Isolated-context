@@ -10,7 +10,7 @@
   </Target>
 
   <ItemGroup>
-    <PackageReference Include="PluginBase" Version="2.0.0" />
+    <PackageReference Include="PluginBase" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
