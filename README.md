@@ -20,5 +20,5 @@ Creating plugin framework with isolated assembly load context. As each plugin wo
 
 ## References
 
-[JeremyBytes - Dynamic loading .net standard libraries in .net core](https://jeremybytes.blogspot.com/2020/01/using-typegettype-with-net-core.html)
+[JeremyBytes - Dynamic loading .net standard libraries in .net core](https://jeremybytes.blogspot.com/2020/01/using-typegettype-with-net-core.html)<br/>
 [JeremyBytes - Dynamically loading types in .net core with a custom assembly load context](https://jeremybytes.blogspot.com/2020/01/dynamically-loading-types-in-net-core.html)
