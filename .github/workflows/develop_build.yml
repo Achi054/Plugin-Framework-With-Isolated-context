@@ -20,10 +20,7 @@ jobs:
         dotnet-version: 5.0.x
     - name: Ensure GitHub NuGet Source
       run: |
-        dotnet nuget add source https://nuget.pkg.github.com/Achi054/index.json \
-        -n github \
-        -u ${{ secrets.REGISTRY_OWNER }} \
-        -p ${{ secrets.NUGET_TOKEN }} --store-password-in-clear-text
+        dotnet nuget add source https://nuget.pkg.github.com/Achi054/index.json -n github -u ${{ secrets.REGISTRY_OWNER }} -p ${{ secrets.NUGET_TOKEN }} --store-password-in-clear-text
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
