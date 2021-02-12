@@ -1,6 +1,4 @@
-﻿using System.Threading.Tasks;
-
-namespace PluginBase
+﻿namespace PluginBase
 {
     public interface ICommand
     {
@@ -8,6 +6,6 @@ namespace PluginBase
 
         string Description { get; }
 
-        Task ExecuteAsync(string name, string version);
+        int Execute();
     }
 }
