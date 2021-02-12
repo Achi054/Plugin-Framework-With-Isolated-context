@@ -12,6 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Prep
+      run: |
+        echo "::set-env name=CONFIG::Release"
+        echo "::set-env name=NUGET_URL::https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
     - name: Checkout repo
       uses: actions/checkout@v2
     - name: Setup .NET
