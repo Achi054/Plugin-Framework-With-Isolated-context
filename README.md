@@ -22,3 +22,10 @@ Creating plugin framework with isolated assembly load context. As each plugin wo
 
 [JeremyBytes - Dynamic loading .net standard libraries in .net core](https://jeremybytes.blogspot.com/2020/01/using-typegettype-with-net-core.html)<br/>
 [JeremyBytes - Dynamically loading types in .net core with a custom assembly load context](https://jeremybytes.blogspot.com/2020/01/dynamically-loading-types-in-net-core.html)
+
+## Detailed build status
+
+| Branch  | Build Status                                                                                                          |
+| ------- | --------------------------------------------------------------------------------------------------------------------- |
+| develop | ![develop_build](https://github.com/Achi054/Plugin-Framework-With-Isolated-context/workflows/develop_build/badge.svg) |
+| main    | ![main_build](https://github.com/Achi054/Plugin-Framework-With-Isolated-context/workflows/main_build/badge.svg)       |
