@@ -10,8 +10,8 @@ namespace PluginApp
     {
         private static readonly IEnumerable<(string, string, string, string[])> pluginInfo = new List<(string, string, string, string[])>
         {
-            ("2.0.0.0", "ICommand", "Execute", Array.Empty<string>()),
-            ("2.2.0.0", "ICommand", "ExecuteAsync", new[] { "name", "version" }),
+            ("1.0.0.0", "ICommand", "Execute", Array.Empty<string>()),
+            ("3.0.0.0", "ICommand", "ExecuteAsync", new[] { "name", "version" }),
         };
 
         internal const string PluginInterfaceName = "ICommand";
@@ -42,7 +42,7 @@ namespace PluginApp
         internal static object[] GetParameterInput(string version, IEnumerable<(string, string)> parameterInfos)
             => version switch
             {
-                "2.2.0.0" => GetParameters_v2_2(version, parameterInfos),
+                "3.0.0.0" => GetParameters_v2_2(version, parameterInfos),
                 _ => null,
             };
 
@@ -60,8 +60,8 @@ namespace PluginApp
         private static MethodInfo GetMethodBasedOnVersion(Type type, string version)
             => version switch
             {
-                "2.0.0.0" => type.GetMethod(pluginInfo.FirstOrDefault(x => x.Item1 == version).Item3),
-                "2.2.0.0" => type.GetMethod(pluginInfo.FirstOrDefault(x => x.Item1 == version).Item3),
+                "1.0.0.0" => type.GetMethod(pluginInfo.FirstOrDefault(x => x.Item1 == version).Item3),
+                "3.0.0.0" => type.GetMethod(pluginInfo.FirstOrDefault(x => x.Item1 == version).Item3),
                 _ => null,
             };
     }
