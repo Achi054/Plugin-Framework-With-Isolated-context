@@ -14,9 +14,9 @@ Creating plugin framework with isolated assembly load context. As each plugin wo
 **`LoginPlugin`** - .net standard 2.1 plugin library<br/>
 **`SerializationPlugin`** - .net core 3.1 plugin library
 
-`PluginBase` has 2 versions `2.0.0.0` & `2.2.0.0`<br/>
-`AuditPlugin` & `LoginPlugin` references `2.0.0.0`<br/>
-`SerializationPlugin` references `2.2.0.0`
+`PluginBase` has 2 versions `4.0.0.0` & `3.0.0.0`<br/>
+`AuditPlugin` & `LoginPlugin` references `4.0.0.0`<br/>
+`SerializationPlugin` references `3.0.0.0`
 
 ## References
 
